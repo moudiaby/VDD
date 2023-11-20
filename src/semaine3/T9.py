@@ -6,7 +6,6 @@ cnx = mysql.connector.connect(host='localhost', user='root', password='', databa
 cursor = cnx.cursor()
 
 #Récupération des identifiants existants dans la table Produits
-
 cursor.execute("SELECT idProduit FROM produits")
 idProduit = [row[0] for row in cursor.fetchall()]
 
