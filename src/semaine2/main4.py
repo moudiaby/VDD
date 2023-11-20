@@ -15,6 +15,6 @@ def generer_nom_aleatoire(longueur):
             est_voyelle = True
     return nom
 
-# Exemple d'utilisation pour générer 10 noms aléatoires de longueur 5
+#Exemple d'utilisation pour générer 10 noms aléatoires
 for _ in range(10):
     print(generer_nom_aleatoire(5))

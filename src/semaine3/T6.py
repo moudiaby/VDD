@@ -1,7 +1,7 @@
 
 import mysql.connector 
 import random 
-# Connexion à la base de données 
+#Connexion à la base de données 
 cnx = mysql.connector.connect( 
 host="localhost", 
 user="root", 
@@ -30,7 +30,7 @@ for id_client in id_clients:
         curseur.execute(req_update, (ville, pays, id_client))
 
 
-# # Valider les changements et fermer la connexion 
+#Valider les changements et fermer la connexion 
 cnx.commit() 
 curseur.close() 
 cnx.close()

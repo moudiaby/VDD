@@ -1,0 +1,15 @@
+ALTER TABLE lignes_commande MODIFY COLUMN idProduit VARCHAR(50)
+
+INSERT INTO produits(idProduit, nomproduit, prix, poids)
+SELECT Uniq id, Product Name, Selling Price, Shipping Weight
+FROM products;
+
+ALTER TABLE clients CHANGE COLUMN User id idClients VARCHAR(50);
+
+
+ALTER TABLE clients
+ADD ville VARCHAR(37),
+ADD pays VARCHAR(44),
+ADD mdp VARCHAR(40);
+
+ALTER TABLE commande MODIFY COLUMN idCommande INT AUTO_INCREMENT
